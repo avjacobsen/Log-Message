@@ -1,5 +1,5 @@
-# Source: https://github.com/avjacobsen/Log-Message
 function Log-Message {
+    # Source: https://github.com/avjacobsen/Log-Message
     [CmdletBinding()]
         param (
             [Parameter(Mandatory=$true, ValueFromPipeline)]
