@@ -23,7 +23,7 @@ function Log-Message {
     if ($Path -ne "") {
         Add-Content -Path $Path -Value "$($MessagePrefix)[$($MessageType)] $($Message)"
     }
-    if ($VerbosePreference) {
+    if ($VerbosePreference -or $DebugPreference) {
         "$($MessagePrefix)[$($MessageType)] $($Message)"
     }
 }
