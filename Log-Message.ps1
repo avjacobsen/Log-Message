@@ -14,7 +14,7 @@ function Log-Message {
     )
     if ($Path -eq "" -and $PSCommandPath -ne "") {
         # No path supplied but running from script. Setting path to script name.
-        $Path = "$(Get-Date -Format "yyyy")$(Get-Date -Format "MM")$(Get-Date -Format "dd")_$((Get-ChildItem $PSCommandPath).BaseName).log"
+        $Path = "$(Get-Date -Format "yyyy")$(Get-Date -Format "MM")$(Get-Date -Format "dd")_$((Get-Item $PSCommandPath).BaseName).log"
     }
     if ($Path -eq "" -and $PSCommandPath -eq "") {
         # No path supplied and not running from script. Logging to file skipped.
