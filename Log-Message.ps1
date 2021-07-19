@@ -1,3 +1,4 @@
+# Source: https://github.com/avjacobsen/Log-Message
 function Log-Message {
     [CmdletBinding()]
         param (
