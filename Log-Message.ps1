@@ -24,6 +24,6 @@ function Log-Message {
         Add-Content -Path $Path -Value "$($MessagePrefix)[$($MessageType)] $($Message)"
     }
     if ($VerbosePreference -or $DebugPreference) {
-        "$($MessagePrefix)[$($MessageType)] $($Message)"
+        Write-Host "$($MessagePrefix)[$($MessageType)] $($Message)"
     }
 }
