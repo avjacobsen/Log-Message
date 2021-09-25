@@ -1,5 +1,5 @@
-function Log-Message {
-    # Source: https://github.com/avjacobsen/Log-Message
+function Write-LogMessage {
+    # Source: https://github.com/avjacobsen/Write-LogMessage
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline)]
